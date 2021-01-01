@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Exemplo original com erro
+# Retornar a média
+
+SOMA_NOTAS=$(echo "$@" | tr ' ' '+')
+
+echo $(echo "$SOMA_NOTAS/$#" | bc -l)
+

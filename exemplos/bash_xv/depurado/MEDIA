@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Exemplo depois da depuração
+# Retornar a média
+
+[ "$#" -eq "0" ] && echo "0" && exit 0
+
+SOMA_NOTAS=$(echo "$@" | tr ' ' '+')
+
+echo $(echo "($SOMA_NOTAS)/$#" | bc -l)
+
