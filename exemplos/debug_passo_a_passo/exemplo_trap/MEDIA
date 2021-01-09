@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# Exemplo depois da depuração
+# Retornar a média
+# O comando trap executa funcao após
+# cada trecho de código
+
+# Chama funcao após a execução de cada linha
+funcao(){
+	echo "$BASH_LINENO: SOMA_NOTAS=$SOMA_NOTAS"
+}
+
+trap funcao DEBUG
+
+[ "$#" -eq "0" ] && echo "0" && exit 0
+
+SOMA_NOTAS=$(echo "$@" | tr ' ' '+')
+
+echo $(echo "($SOMA_NOTAS)/$#" | bc -l)
+

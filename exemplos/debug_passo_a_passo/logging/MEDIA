@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# Exemplo depois da depuração
+# Retornar a média
+
+data(){
+	echo "MEDIA=$MEDIA" >> log.txt
+	echo "fim da execução em $(date)" >> log.txt
+}
+
+logging(){
+	echo "$BASH_LINENO: SOMA_NOTAS=$SOMA_NOTAS" >> log.txt
+}
+
+trap logging DEBUG
+trap data exit
+
+[ "$#" -eq "0" ] && echo "0" && exit 0
+
+SOMA_NOTAS=$(echo "$@" | tr ' ' '+')
+
+MEDIA=$(echo "($SOMA_NOTAS)/$#" | bc -l)
+
+echo "$MEDIA"
+
+trap "" DEBUG
