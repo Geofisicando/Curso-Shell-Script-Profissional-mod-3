@@ -1,0 +1,11 @@
+#!/usr/bin/expect -f
+
+spawn ./teste.sh 
+
+expect "Digite seu nome:"
+send -- "ROBÔ\r"
+
+expect "Qual a sua idade,"
+send -- "28\r" 
+
+expect "%"
