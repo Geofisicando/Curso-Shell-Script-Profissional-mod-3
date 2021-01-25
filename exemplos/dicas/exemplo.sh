@@ -14,7 +14,6 @@ debug(){
 		4) prefixo="------------{ ";;
 		*) echo "Mensagem não categorizada: $*"; return;;
 	esac
-	shift
 
 	echo "($nivel)$prefixo$*"
 }
