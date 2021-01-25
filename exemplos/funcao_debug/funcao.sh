@@ -1,5 +1,7 @@
 #!/bin/bash
-
+#
+# Script modificado com a função de debug
+# Descomentar a linha abaixo para ativar modo debug
 #DEBUG="1"
 
 debug(){
@@ -18,7 +20,7 @@ echo "O nome digitado é $NOME"
 
 read -p "Qual a sua idade, $NOME? " IDADE
 
-[ -z "$NOME" ] && debug "Usuário não digitou nenhuma idade!"
+[ -z "$IDADE" ] && debug "Usuário não digitou nenhuma idade!"
 
 echo "Sua idade é $IDADE"
 

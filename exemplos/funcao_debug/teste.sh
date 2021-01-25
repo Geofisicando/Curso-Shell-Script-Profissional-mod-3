@@ -2,7 +2,7 @@
 #
 # teste.sh (Shell Script)
 # 
-# Objetivo: Exemplo de script testado com o programa expect.
+# Objetivo: Exemplo script original sem a função de debug.
 # 
 # Site: https://dirack.github.io
 # 
