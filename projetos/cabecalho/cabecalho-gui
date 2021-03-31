@@ -1,0 +1,30 @@
+#!/bin/bash
+# 
+# cabecalho-gui (Shell Script)
+# 
+# Objetivo: Interface gráfica de usuário para gerar um cabeçalho
+# padronizado em Shell Script ou Python utilizando o script 'cabecalho.sh'.
+# 
+# Site: https://dirack.github.io
+# 
+# Versão 1.0 
+#               
+# Programador: Rodolfo A C Neves (Dirack) 31/03/2021
+#       
+# Email: rodolfo_profissional@hotmail.com
+#               
+# Licença: GPL-3.0 <https://www.gnu.org/licenses/gpl-3.0.txt>.
+
+NOMEDOPROGRAMA=$(dialog --stdout \
+	--inputbox "Digite o nome do programa:" \
+	0 0)
+
+OBJETIVO=$(dialog --stdout \
+	--inputbox "Digite o objetivo do programa:" \
+	0 0)
+
+OPCAO=$(dialog --stdout \
+	--radiolist "Opções de cabeçalho" 0 0 3 \
+	"sh" "Shell Script" on "py" "Python" off)
+
+./cabecalho.sh "-$OPCAO" "$NOMEDOPROGRAMA" -m "$OBJETIVO"
