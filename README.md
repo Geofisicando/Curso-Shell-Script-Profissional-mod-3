@@ -11,3 +11,6 @@ Também serve para dar confiança ao usuário de que o programa foi testado e es
 Neste módulo, aprenderemos a produzir programas profissionais em Shell Script, fáceis de manter e de
 adicionar novas funcionalidades. Também aprenderemos como realizar a depuração com técnicas profissionais
 específicas da linguagem Shell Script.
+
+## Índice
+> Este material de apoio está em manutenção, alguns recursos ainda não estão disponíveis.
