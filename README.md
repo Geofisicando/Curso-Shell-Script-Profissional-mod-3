@@ -12,9 +12,15 @@ Neste módulo, aprenderemos a produzir programas profissionais em Shell Script, 
 adicionar novas funcionalidades. Também aprenderemos como realizar a depuração com técnicas profissionais
 específicas da linguagem Shell Script.
 
+## Dependências
+
+Este curso utiliza o shell Bash, acrônimo para "Bourne-Again SHell", que já vem instalado por padrão no Linux Ubuntu.
+
 ## Índice
 > Este material de apoio está em manutenção, alguns recursos ainda não estão disponíveis.
 
+## Exercícios: 
+  - [Quiz 3](https://docs.google.com/forms/d/e/1FAIpQLSdAfvgVK0LCd5fGMq_KBByEKxaG4k6rSEwHP91DM7TaX89qkg/viewform)
 
 Introdução Total 1 aula (00:02 horas)
 
